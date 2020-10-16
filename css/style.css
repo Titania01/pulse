@@ -1,0 +1,48 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.pulse {
+  width: 10rem;
+  height: 10rem;
+  border: 2px solid lightblue;
+  border-radius: 50%;
+  margin: 3rem auto;
+  position: relative;
+  display: flex;
+  background: white;
+  justify-content: center;
+  align-items: center;
+}
+
+.pulse svg {
+  width: 4rem;
+  height: 4rem;
+  position: absolute;
+  top: calc(50% - 2rem);
+  left: calc(50% - 2rem);
+}
+
+.boom {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background: lightblue;
+  animation: boom 1s ease-out infinite;
+}
+
+@keyframes boom {
+  0% {
+    opacity: 0.5;
+  }
+  20% {
+    width: 30%;
+    height: 30%;
+  }
+  100% {
+    width: 100%;
+    height: 100%;
+    opacity: 0.1;
+  }
